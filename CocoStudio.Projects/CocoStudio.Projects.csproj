@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.Projects.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C6AD019-0AF3-4BB9-BCB4-43581BB25D91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.Projects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.Projects</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins">
+      <HintPath>..\External-Libs\Mono.Addins.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>lib\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External-Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xwt">
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModelExtensionAttribute.cs" />
+    <Compile Include="DataModelExtensionNode.cs" />
+    <Compile Include="DataModelManager.cs" />
+    <Compile Include="ISolutionPropertyData.cs" />
+    <Compile Include="PreviewImageService.cs" />
+    <Compile Include="PreviewImageInfo.cs" />
+    <Compile Include="ChangedResourceCollection.cs" />
+    <Compile Include="IResource.cs" />
+    <Compile Include="ResourceItem.cs" />
+    <Compile Include="IFileItem.cs" />
+    <Compile Include="IResourceValid.cs" />
+    <Compile Include="ResourceFile.cs" />
+    <Compile Include="FntFile.cs" />
+    <Compile Include="PlistParticleFile.cs" />
+    <Compile Include="TmxFile.cs" />
+    <Compile Include="IGameProjectSerializer.cs" />
+    <Compile Include="IProject.cs" />
+    <Compile Include="IInitialize.cs" />
+    <Compile Include="IProjectFile.cs" />
+    <Compile Include="IPublish.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="EmptyProject.cs" />
+    <Compile Include="PlistImageFile.cs" />
+    <Compile Include="IFoldeItem.cs" />
+    <Compile Include="ResourceFolder.cs" />
+    <Compile Include="PlistImageFolder.cs" />
+    <Compile Include="IDataModel.cs" />
+    <Compile Include="ISerializeManager.cs" />
+    <Compile Include="PublishInfo.cs" />
+    <Compile Include="ProjectItem.cs" />
+    <Compile Include="IProjectBinding.cs" />
+    <Compile Include="ProjectBinding.cs" />
+    <Compile Include="IProjectContent.cs" />
+    <Compile Include="AudioFile.cs" />
+    <Compile Include="ILoadController.cs" />
+    <Compile Include="ImageFile.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemCollection`1.cs" />
+    <Compile Include="IWorkspaceObject.cs" />
+    <Compile Include="IWorkspaceFileObject.cs" />
+    <Compile Include="ProjectBindingManager.cs" />
+    <Compile Include="ProjectCreateInformation.cs" />
+    <Compile Include="ProjectFile.cs" />
+    <Compile Include="ProjectsService.cs" />
+    <Compile Include="ResourceChangedFactory.cs" />
+    <Compile Include="ResourceChangedSender.cs" />
+    <Compile Include="ResourceChangedSenderEmpty.cs" />
+    <Compile Include="SerializerID.cs" />
+    <Compile Include="SerializeManager.cs" />
+    <Compile Include="ResourceInfoDragData.cs" />
+    <Compile Include="ResourceItemCollection.cs" />
+    <Compile Include="ResourcePathItemProperty.cs" />
+    <Compile Include="PathDataType.cs" />
+    <Compile Include="RelativeResourcePathItemProperty.cs" />
+    <Compile Include="RelativePathDataType.cs" />
+    <Compile Include="ResourceTypeManager.cs" />
+    <Compile Include="SolutionArgsKey.cs" />
+    <Compile Include="SolutionItemCollection.cs" />
+    <Compile Include="GameProjectFile.cs" />
+    <Compile Include="WorkspaceItem.cs" />
+    <Compile Include="Solution.cs" />
+    <Compile Include="SolutionItem.cs" />
+    <Compile Include="SolutionEntityItem.cs" />
+    <Compile Include="SolutionFolder.cs" />
+    <Compile Include="UnknowProject.cs" />
+    <Compile Include="UnknowSolutionItem.cs" />
+    <Compile Include="UnknowWorkspaceItem.cs" />
+    <Compile Include="Workspace.cs" />
+    <Compile Include="ResourceGroup.cs" />
+    <Compile Include="Formates\IFileFormat.cs" />
+    <Compile Include="Formates\FileFormat.cs" />
+    <Compile Include="Formates\AudioFileFormat.cs" />
+    <Compile Include="Formates\IPublishProcesser.cs" />
+    <Compile Include="Formates\ICompositeResourceProcesser.cs" />
+    <Compile Include="Formates\FntFileFormat.cs" />
+    <Compile Include="Formates\PairResourceHelp.cs" />
+    <Compile Include="Formates\PlistImageFloderFormat.cs" />
+    <Compile Include="Formates\PlistParticleFileFormat.cs" />
+    <Compile Include="Formates\TmxFileFormat.cs" />
+    <Compile Include="Formates\FileFormatManager.cs" />
+    <Compile Include="Formates\FileSuffixes.cs" />
+    <Compile Include="Formates\ImageFileFormat.cs" />
+    <Compile Include="Formates\ProjectFileFormat.cs" />
+    <Compile Include="Formates\ProjectFormat.cs" />
+    <Compile Include="Formates\ResourceItemFormat.cs" />
+    <Compile Include="Formates\ProcesserManager.cs" />
+    <Compile Include="Formates\SolutionFormat.cs" />
+    <Compile Include="Formates\ExtendResourceItemFormates\PlistImageFileFormat.cs" />
+    <Compile Include="Visiter\SolutionVisiter.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.EngineAdapterWrap\CocoStudio.EngineAdapterWrap.csproj">
+      <Project>{faa231aa-7e4e-425d-b17d-62e4f08342f0}</Project>
+      <Name>CocoStudio.EngineAdapterWrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Model.Basic\CocoStudio.Model.Basic.csproj">
+      <Project>{a12dd75c-1298-4df4-acca-e50017bbab71}</Project>
+      <Name>CocoStudio.Model.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.MultiLanguage\Modules.Communal.MultiLanguage.csproj">
+      <Project>{3c6e6bce-89f3-428c-a404-3d6a2c828406}</Project>
+      <Name>Modules.Communal.MultiLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.Packer\Modules.Communal.Packer.csproj">
+      <Project>{abcd1f39-4add-463d-af6f-26bf293f657f}</Project>
+      <Name>Modules.Communal.Packer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.PList\Modules.Communal.PList.csproj">
+      <Project>{0be7b35e-486d-4dab-b42b-bcaefec62c92}</Project>
+      <Name>Modules.Communal.PList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

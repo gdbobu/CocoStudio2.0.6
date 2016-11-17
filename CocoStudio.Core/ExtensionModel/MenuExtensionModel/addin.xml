@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ExtensionModel>
+
+  <ExtensionPoint path="/CocoStudio/Ide/MainMenu">
+    <ExtensionNodeSet id="CocoStudio.Core.ExtensionModel.MenuSet"/>
+  </ExtensionPoint>
+
+  <ExtensionNodeSet id="CocoStudio.Core.ExtensionModel.MenuSet">
+    <ExtensionNode name="MenuItem" type="CocoStudio.Core.ExtensionModel.CmdEntryCodon"/>
+    <ExtensionNode name="MenuSet" type="CocoStudio.Core.ExtensionModel.CmdEntrySetCodon">
+      <ExtensionNodeSet id="CocoStudio.Core.ExtensionModel.MenuSet" />
+    </ExtensionNode>
+    <ExtensionNode name="SeparatorItem" type="MonoDevelop.Components.Commands.ExtensionNodes.SeparatorItemCodon" />
+  </ExtensionNodeSet>
+
+</ExtensionModel>

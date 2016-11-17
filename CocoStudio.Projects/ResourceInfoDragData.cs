@@ -1,0 +1,20 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: CocoStudio.Projects.ResourceInfoDragData
+// Assembly: CocoStudio.Projects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+// MVID: DCF182CC-57DB-4DD6-AF38-C89A798411CC
+// Assembly location: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.Projects.dll
+
+using System.Collections.Generic;
+
+namespace CocoStudio.Projects
+{
+  public class ResourceInfoDragData
+  {
+    public IList<ResourceItem> Items { get; private set; }
+
+    public ResourceInfoDragData(IList<ResourceItem> ResourceList)
+    {
+      this.Items = ResourceList;
+    }
+  }
+}

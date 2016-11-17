@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.EngineAdapterWrap.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAA231AA-7E4E-425D-B17D-62E4F08342F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.EngineAdapterWrap</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.EngineAdapterWrap</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSRect.cs" />
+    <Compile Include="CSAnimation.cs" />
+    <Compile Include="CSMatrix.cs" />
+    <Compile Include="CSObject.cs" />
+    <Compile Include="CSTimelineFrame.cs" />
+    <Compile Include="CSTimelineTextureFrame.cs" />
+    <Compile Include="CSVisualObject.cs" />
+    <Compile Include="CSVisualObjectEmpty.cs" />
+    <Compile Include="EncodingHelp.cs" />
+    <Compile Include="GtkInvokeHelp.cs" />
+    <Compile Include="MatrixNode.cs" />
+    <Compile Include="UTF8Marshaler.cs" />
+    <Compile Include="Acceleration.cs" />
+    <Compile Include="BlendFunc.cs" />
+    <Compile Include="CocoStudioEngineAdapter.cs" />
+    <Compile Include="CocoStudioEngineAdapterPINVOKE.cs" />
+    <Compile Include="Color3B.cs" />
+    <Compile Include="Color4B.cs" />
+    <Compile Include="Color4F.cs" />
+    <Compile Include="CSNode.cs" />
+    <Compile Include="CSWidget.cs" />
+    <Compile Include="CSButton.cs" />
+    <Compile Include="CSCanvas.cs" />
+    <Compile Include="CSCheckBox.cs" />
+    <Compile Include="CSCocosHelp.cs" />
+    <Compile Include="CSComControlNode.cs" />
+    <Compile Include="CSControlBoundingType.cs" />
+    <Compile Include="CSEnumResourceType.cs" />
+    <Compile Include="CSGameMap.cs" />
+    <Compile Include="CSImageView.cs" />
+    <Compile Include="CSLayer.cs" />
+    <Compile Include="CSPanel.cs" />
+    <Compile Include="CSScrollView.cs" />
+    <Compile Include="CSListView.cs" />
+    <Compile Include="CSLoadingBar.cs" />
+    <Compile Include="CSPageView.cs" />
+    <Compile Include="CSParticleSystem.cs" />
+    <Compile Include="CSPrimitive.cs" />
+    <Compile Include="CSProjectNode.cs" />
+    <Compile Include="CSResourceData.cs" />
+    <Compile Include="CSScale.cs" />
+    <Compile Include="CSScene.cs" />
+    <Compile Include="CSSimpleAudio.cs" />
+    <Compile Include="CSSlider.cs" />
+    <Compile Include="CSSprite.cs" />
+    <Compile Include="CSText.cs" />
+    <Compile Include="CSTextAtlas.cs" />
+    <Compile Include="CSTextBMFont.cs" />
+    <Compile Include="CSTextField.cs" />
+    <Compile Include="CSTimeline.cs" />
+    <Compile Include="CSTimelineAction.cs" />
+    <Compile Include="CSTimelineAnchorPointFrame.cs" />
+    <Compile Include="CSTimelineColorFrame.cs" />
+    <Compile Include="CSTimelineEventFrame.cs" />
+    <Compile Include="CSTimelineInnerActionFrame.cs" />
+    <Compile Include="CSTimelinePositionFrame.cs" />
+    <Compile Include="CSTimelineRotationFrame.cs" />
+    <Compile Include="CSTimelineSkewFrame.cs" />
+    <Compile Include="CSTimelineRotationSkewFrame.cs" />
+    <Compile Include="CSTimelineScaleFrame.cs" />
+    <Compile Include="CSTimelineVisibleFrame.cs" />
+    <Compile Include="CSTimelineZOrderFrame.cs" />
+    <Compile Include="CSVectorDouble.cs" />
+    <Compile Include="CSVectorFloat.cs" />
+    <Compile Include="CSVectorInt.cs" />
+    <Compile Include="CSVectorPoint.cs" />
+    <Compile Include="CSVectorRect.cs" />
+    <Compile Include="CSVectorString.cs" />
+    <Compile Include="CSWindow.cs" />
+    <Compile Include="PointSprite.cs" />
+    <Compile Include="Quad2.cs" />
+    <Compile Include="Quad3.cs" />
+    <Compile Include="Rect.cs" />
+    <Compile Include="Size.cs" />
+    <Compile Include="T2F_Quad.cs" />
+    <Compile Include="Tex2F.cs" />
+    <Compile Include="TextHAlignment.cs" />
+    <Compile Include="TextVAlignment.cs" />
+    <Compile Include="V2F_C4B_T2F.cs" />
+    <Compile Include="V2F_C4B_T2F_Quad.cs" />
+    <Compile Include="V2F_C4B_T2F_Triangle.cs" />
+    <Compile Include="V2F_C4F_T2F.cs" />
+    <Compile Include="V2F_C4F_T2F_Quad.cs" />
+    <Compile Include="V3F_C4B_T2F.cs" />
+    <Compile Include="V3F_C4B_T2F_Quad.cs" />
+    <Compile Include="V3F_T2F.cs" />
+    <Compile Include="V3F_T2F_Quad.cs" />
+    <Compile Include="Vec2.cs" />
+    <Compile Include="Vec3.cs" />
+    <Compile Include="WrapperFactory.cs" />
+    <Compile Include="Extend\ObjectExtend.cs" />
+    <Compile Include="Plugin\Factory.cs" />
+    <Compile Include="Plugin\MethodType.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Model.Basic\CocoStudio.Model.Basic.csproj">
+      <Project>{a12dd75c-1298-4df4-acca-e50017bbab71}</Project>
+      <Name>CocoStudio.Model.Basic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

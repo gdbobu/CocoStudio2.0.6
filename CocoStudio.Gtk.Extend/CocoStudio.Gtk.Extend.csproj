@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.Gtk.Extend.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEE1A330-6030-41B8-8FE3-60ED9E918BEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.Gtk.Extend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Cairo.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoMac.dll</HintPath>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\pango-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="Modules.Communal.MultiLanguage">
+      <HintPath>lib\Modules.Communal.MultiLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt.Gtk, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Xwt.Gtk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Stetic\Gui.cs" />
+    <Compile Include="Stetic\ActionGroups.cs" />
+    <Compile Include="Stetic\BinContainer.cs" />
+    <Compile Include="Gtk\ApplicationCurrent.cs" />
+    <Compile Include="Gtk\ButtonState.cs" />
+    <Compile Include="Gtk\CcsColorButton.cs" />
+    <Compile Include="Gtk\CustomExpender.cs" />
+    <Compile Include="Gtk\ExpandEvent.cs" />
+    <Compile Include="Gtk\EntryCallBackEventArgs.cs" />
+    <Compile Include="Gtk\EntryCallBackEx.cs" />
+    <Compile Include="Gtk\EntryIntEventArgs.cs" />
+    <Compile Include="Gtk\EntryIntEx.cs" />
+    <Compile Include="Gtk\INumberEntry.cs" />
+    <Compile Include="Gtk\GtkEntryExtend.cs" />
+    <Compile Include="Gtk\CustomImageView.cs" />
+    <Compile Include="Gtk\CSImageButton.cs" />
+    <Compile Include="Gtk\Cursors.cs" />
+    <Compile Include="Gtk\DragTargetType.cs" />
+    <Compile Include="Gtk\HelperMethods.cs" />
+    <Compile Include="Gtk\GtkWindowHelper.cs" />
+    <Compile Include="Gtk\ImageIcon.cs" />
+    <Compile Include="Gtk\IWindowClosed.cs" />
+    <Compile Include="Gtk\ButtonText.cs" />
+    <Compile Include="Gtk\IWidgetWrapper.cs" />
+    <Compile Include="Gtk\MacWebView.cs" />
+    <Compile Include="Gtk\MessageBoxDialog.cs" />
+    <Compile Include="Gtk\PassWordEntry.cs" />
+    <Compile Include="Gtk\RadioButtonImage.cs" />
+    <Compile Include="Gtk\RegexModel.cs" />
+    <Compile Include="Gtk\SetWidgetProperty.cs" />
+    <Compile Include="Gtk\WebViewBox.cs" />
+    <Compile Include="Gtk\WidgetWrapper.cs" />
+    <Compile Include="Gtk\WebViewWrapper.cs" />
+    <Compile Include="Gtk\DragContextExtend.cs" />
+    <Compile Include="Gtk\DragDataManager.cs" />
+    <Compile Include="Gtk\DragMotionArgsExtend.cs" />
+    <Compile Include="Gtk\DropPosition.cs" />
+    <Compile Include="Gtk\FileDropInfo.cs" />
+    <Compile Include="Gtk\SelectionDataExtend.cs" />
+    <Compile Include="Gtk\SelectFolderDialogResult.cs" />
+    <Compile Include="Gtk\SelectFileDialogResult.cs" />
+    <Compile Include="Gtk\FileAction.cs" />
+    <Compile Include="Gtk\FileChooserAdapter.cs" />
+    <Compile Include="Gtk\FileChooserDialogModel.cs" />
+    <Compile Include="Gtk\PopoverWindow.cs" />
+    <Compile Include="Gtk\EventButtonExtend.cs" />
+    <Compile Include="Gtk\MessageBox.cs" />
+    <Compile Include="Gtk\MessageBoxButton.cs" />
+    <Compile Include="Gtk\MessageBoxImage.cs" />
+    <Compile Include="Gtk\MessageBoxResult.cs" />
+    <Compile Include="Gtk\EventMotionExtend.cs" />
+    <Compile Include="Gtk\ModifierTypeExtend.cs" />
+    <Compile Include="Gtk\PointExtend.cs" />
+    <Compile Include="Gtk\ScrollEventArgsExtend.cs" />
+    <Compile Include="Gtk\ImageExtend.cs" />
+    <Compile Include="Gtk\CellRendererToggleImage.cs" />
+    <Compile Include="Gtk\ImageBin.cs" />
+    <Compile Include="Gtk\MouseButton.cs" />
+    <Compile Include="Gtk\MessageFileDiaolg.cs" />
+    <Compile Include="Gtk\NSOpenFileButtonCode.cs" />
+    <Compile Include="Gtk\StyleColorManager.cs" />
+    <Compile Include="Gtk\IDragSource.cs" />
+    <Compile Include="Gtk\IDataModel.cs" />
+    <Compile Include="Gtk\IDropTarget.cs" />
+    <Compile Include="Gtk\LabelStyleSetting.cs" />
+    <Compile Include="Gtk\LabelLink.cs" />
+    <Compile Include="Gtk\LabelClickedEventArgs.cs" />
+    <Compile Include="Gtk\ToggleButtonImage.cs" />
+    <Compile Include="Gtk\WindowStyle.cs" />
+    <Compile Include="Gtk\NativeGdkMac.cs" />
+    <Compile Include="Gtk\NativeGdkWin.cs" />
+    <Compile Include="Gtk\SetNSWindowStyle.cs" />
+    <Compile Include="Gtk\ColorPickerDialog.cs" />
+    <Compile Include="Gtk\ColorSetEventArgs.cs" />
+    <Compile Include="Gtk\Controls\CheckButtonEx.cs" />
+    <Compile Include="Gtk\Controls\ColorEditorGtk.cs" />
+    <Compile Include="Gtk\Controls\ColorImage.cs" />
+    <Compile Include="Gtk\Controls\ColorEx.cs" />
+    <Compile Include="Gtk\Controls\ColorExEvent.cs" />
+    <Compile Include="Gtk\Controls\ComBoxEx.cs" />
+    <Compile Include="Gtk\Controls\EntryEx.cs" />
+    <Compile Include="Gdk\PixbufHelper.cs" />
+    <Compile Include="Gdk\KeyboardExtend.cs" />
+    <Compile Include="Gdk\Colors.cs" />
+    <Compile Include="OpenDialogs\BaseDialogNative.cs" />
+    <Compile Include="OpenDialogs\DummyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenDialogs\FileHelper.cs" />
+    <Compile Include="OpenDialogs\LnkHelper.cs" />
+    <Compile Include="OpenDialogs\OpenDialogNative.cs" />
+    <Compile Include="OpenDialogs\OpenFilesDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpenDialogs\OpenFloderDialog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpenDialogs\SysListView32Helper.cs" />
+    <Compile Include="OpenDialogs\ControlsID.cs" />
+    <Compile Include="OpenDialogs\SWP_Flags.cs" />
+    <Compile Include="OpenDialogs\DialogChangeStatus.cs" />
+    <Compile Include="OpenDialogs\DialogChangeProperties.cs" />
+    <Compile Include="OpenDialogs\ImeNotify.cs" />
+    <Compile Include="OpenDialogs\FolderViewMode.cs" />
+    <Compile Include="OpenDialogs\DefaultViewType.cs" />
+    <Compile Include="OpenDialogs\ButtonStyle.cs" />
+    <Compile Include="OpenDialogs\ZOrderPos.cs" />
+    <Compile Include="OpenDialogs\StaticControlStyles.cs" />
+    <Compile Include="OpenDialogs\ComboBoxStyles.cs" />
+    <Compile Include="OpenDialogs\WindowStyles.cs" />
+    <Compile Include="OpenDialogs\WindowExStyles.cs" />
+    <Compile Include="OpenDialogs\ChildFromPointFlags.cs" />
+    <Compile Include="OpenDialogs\HitTest.cs" />
+    <Compile Include="OpenDialogs\Msg.cs" />
+    <Compile Include="OpenDialogs\SetWindowPosFlags.cs" />
+    <Compile Include="OpenDialogs\NativeMethods.cs" />
+    <Compile Include="OpenDialogs\WINDOWINFO.cs" />
+    <Compile Include="OpenDialogs\POINT.cs" />
+    <Compile Include="OpenDialogs\RECT.cs" />
+    <Compile Include="OpenDialogs\WINDOWPOS.cs" />
+    <Compile Include="OpenDialogs\NCCALCSIZE_PARAMS.cs" />
+    <Compile Include="OpenDialogs\NMHDR.cs" />
+    <Compile Include="OpenDialogs\OFNOTIFY.cs" />
+    <Compile Include="OpenDialogs\WindowHelper.cs" />
+    <Compile Include="CustomControls\Controls\OpenFileDialogEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.DefaultResource\CocoStudio.DefaultResource.csproj">
+      <Project>{213bcb4e-b659-4557-996a-89f844210e4c}</Project>
+      <Name>CocoStudio.DefaultResource</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

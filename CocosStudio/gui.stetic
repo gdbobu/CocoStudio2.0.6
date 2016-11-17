@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../../CocoStudio.Core/bin/Debug.Mac/CocoStudio.Core.dll" />
+    <widget-library name="../../CocoStudio.Gtk.Extend/bin/Debug/CocoStudio.Gtk.Extend.dll" />
+    <widget-library name="../../CocoStudio.UndoManager/bin/Debug.Mac/CocoStudio.UndoManager.dll" />
+    <widget-library name="../../CocoStudio.UserStatistics/bin/Debug.Mac/CocoStudio.UserStatistics.dll" />
+    <widget-library name="../../CocoStudioCommon/CocoStudio/bin/Debug.Mac/CocoStudio.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Animation/bin/Debug/Modules.Animation.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.AutoSave/bin/Debug.Mac/Modules.Communal.AutoSave.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.PropertyGrid/bin/Debug.Mac/Modules.Communal.PropertyGrid.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Render/bin/Debug.Mac/Modules.Communal.Render.dll" />
+    <widget-library name="../../CocoStudio.Basic/bin/Debug.Mac/CocoStudio.Basic.dll" />
+    <widget-library name="../../CocoStudio.ControlLib/bin/Debug/CocoStudio.ControlLib.dll" />
+    <widget-library name="../../CocoStudio.Lib.Events/bin/Debug.Win32/CocoStudio.Lib.Prism.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Resource/bin/Debug/Modules.Communal.Resource.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.UI.MainTool/bin/Debug.Mac/Modules.UI.MainTool.dll" />
+    <widget-library name="../../Modules.UI.Menu/bin/Debug/Modules.UI.Menu.dll" />
+    <widget-library name="../../Prism.MefExtensions/bin/Debug/CocoStudio.Lib.Prism.MefExtensions.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Language/bin/Debug.Mac/Modules.Communal.MultiLanguage.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Output/bin/Debug.Mac/Modules.Communal.Output.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.UI.ComTool/bin/Debug.Mac/Modules.UI.ComTool.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Status/bin/Debug.Mac/Modules.Communal.Status.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.UI.ProjectResource/bin/Debug.Mac/Modules.UI.ProjectResource.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.UI.RenderContextMenu/bin/Debug.Mac/Modules.UI.RenderContextMenu.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.UI.StructTree/bin/Debug.Mac/Modules.UI.StructTree.dll" />
+    <widget-library name="../../../monodevelop/main/build/bin/MonoDevelop.Ide.dll" />
+    <widget-library name="../../CocoStudioModules/Modules.Communal.Packer/bin/Debug.Mac/Modules.Communal.Packer.dll" />
+    <widget-library name="../../Modules.UI.Menu/bin/Debug/Modules.UI.Menu.dll" />
+    <widget-library name="../../Debug.Mac/CocoStudio.UI.exe" internal="true" />
+  </import>
+</stetic-interface>

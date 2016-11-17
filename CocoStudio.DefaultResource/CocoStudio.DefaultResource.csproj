@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.DefaultResource.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{213BCB4E-B659-4557-996A-89F844210E4C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.DefaultResource</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.DefaultResource</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Resources.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ComponentResource\Button.png" />
+    <EmbeddedResource Include="ComponentResource\Button@2x.png" />
+    <EmbeddedResource Include="ComponentResource\CheckBox.png" />
+    <EmbeddedResource Include="ComponentResource\CheckBox@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Custom.png" />
+    <EmbeddedResource Include="ComponentResource\Custom@2x.png" />
+    <EmbeddedResource Include="ComponentResource\DragPanel.png" />
+    <EmbeddedResource Include="ComponentResource\DragPanel@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Element.png" />
+    <EmbeddedResource Include="ComponentResource\Element@2x.png" />
+    <EmbeddedResource Include="ComponentResource\GameMap.png" />
+    <EmbeddedResource Include="ComponentResource\GameMap@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Help.png" />
+    <EmbeddedResource Include="ComponentResource\Help@2x.png" />
+    <EmbeddedResource Include="ComponentResource\ImageView.png" />
+    <EmbeddedResource Include="ComponentResource\ImageView@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Layer.png" />
+    <EmbeddedResource Include="ComponentResource\Layer@2x.png" />
+    <EmbeddedResource Include="ComponentResource\ListView.png" />
+    <EmbeddedResource Include="ComponentResource\ListView@2x.png" />
+    <EmbeddedResource Include="ComponentResource\LoadingBar.png" />
+    <EmbeddedResource Include="ComponentResource\LoadingBar@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Multi.png" />
+    <EmbeddedResource Include="ComponentResource\Multi@2x.png" />
+    <EmbeddedResource Include="ComponentResource\PageView.png" />
+    <EmbeddedResource Include="ComponentResource\PageView@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Panel.png" />
+    <EmbeddedResource Include="ComponentResource\Panel@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Particle.png" />
+    <EmbeddedResource Include="ComponentResource\Particle@2x.png" />
+    <EmbeddedResource Include="ComponentResource\ProjectNode.png" />
+    <EmbeddedResource Include="ComponentResource\ProjectNode@2x.png" />
+    <EmbeddedResource Include="ComponentResource\ScrollView.png" />
+    <EmbeddedResource Include="ComponentResource\ScrollView@2x.png" />
+    <EmbeddedResource Include="ComponentResource\SimpleAudio.png" />
+    <EmbeddedResource Include="ComponentResource\SimpleAudio@2x.png" />
+    <EmbeddedResource Include="ComponentResource\SingleNode.png" />
+    <EmbeddedResource Include="ComponentResource\SingleNode@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Slider.png" />
+    <EmbeddedResource Include="ComponentResource\Slider@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Sprite.png" />
+    <EmbeddedResource Include="ComponentResource\Sprite@2x.png" />
+    <EmbeddedResource Include="ComponentResource\Text.png" />
+    <EmbeddedResource Include="ComponentResource\Text@2x.png" />
+    <EmbeddedResource Include="ComponentResource\TextArea.png" />
+    <EmbeddedResource Include="ComponentResource\TextArea@2x.png" />
+    <EmbeddedResource Include="ComponentResource\TextAtlas.png" />
+    <EmbeddedResource Include="ComponentResource\TextAtlas@2x.png" />
+    <EmbeddedResource Include="ComponentResource\TextBMFont.png" />
+    <EmbeddedResource Include="ComponentResource\TextBMFont@2x.png" />
+    <EmbeddedResource Include="ComponentResource\TextField.png" />
+    <EmbeddedResource Include="ComponentResource\TextField@2x.png" />
+    <EmbeddedResource Include="CursorImage\Arrow.png" />
+    <EmbeddedResource Include="CursorImage\ArrowForbid.png" />
+    <EmbeddedResource Include="CursorImage\ArrowMove.png" />
+    <EmbeddedResource Include="CursorImage\ArrowMoveAnchor.png" />
+    <EmbeddedResource Include="CursorImage\ChamferHorizon.png" />
+    <EmbeddedResource Include="CursorImage\ChamferVertical.png" />
+    <EmbeddedResource Include="CursorImage\Cross.png" />
+    <EmbeddedResource Include="CursorImage\Fist.png" />
+    <EmbeddedResource Include="CursorImage\Hand.png" />
+    <EmbeddedResource Include="CursorImage\Input.png" />
+    <EmbeddedResource Include="CursorImage\Link.png" />
+    <EmbeddedResource Include="CursorImage\RotateDown.png" />
+    <EmbeddedResource Include="CursorImage\RotateLeft.png" />
+    <EmbeddedResource Include="CursorImage\RotateLeftDown.png" />
+    <EmbeddedResource Include="CursorImage\RotateLeftUp.png" />
+    <EmbeddedResource Include="CursorImage\RotateRight.png" />
+    <EmbeddedResource Include="CursorImage\RotateRightDown.png" />
+    <EmbeddedResource Include="CursorImage\RotateRightUp.png" />
+    <EmbeddedResource Include="CursorImage\RotateUp.png" />
+    <EmbeddedResource Include="CursorImage\StretchHorizon.png" />
+    <EmbeddedResource Include="CursorImage\StretchLeftDown.png" />
+    <EmbeddedResource Include="CursorImage\StretchRightDown.png" />
+    <EmbeddedResource Include="CursorImage\StretchVertical.png" />
+    <EmbeddedResource Include="EditorResource\absolute.png" />
+    <EmbeddedResource Include="EditorResource\absolute@2x.png" />
+    <EmbeddedResource Include="EditorResource\absolute1.png" />
+    <EmbeddedResource Include="EditorResource\absolute1@2x.png" />
+    <EmbeddedResource Include="EditorResource\Arrow.png" />
+    <EmbeddedResource Include="EditorResource\Arrow@2x.png" />
+    <EmbeddedResource Include="EditorResource\down.png" />
+    <EmbeddedResource Include="EditorResource\down@2x.png" />
+    <EmbeddedResource Include="EditorResource\down1.png" />
+    <EmbeddedResource Include="EditorResource\down1@2x.png" />
+    <EmbeddedResource Include="EditorResource\horizontalFilp.png" />
+    <EmbeddedResource Include="EditorResource\horizontalFilp@2x.png" />
+    <EmbeddedResource Include="EditorResource\layout_horizontal.png" />
+    <EmbeddedResource Include="EditorResource\layout_horizontal@2x.png" />
+    <EmbeddedResource Include="EditorResource\layout_horizontal1.png" />
+    <EmbeddedResource Include="EditorResource\layout_horizontal1@2x.png" />
+    <EmbeddedResource Include="EditorResource\layout_vertical.png" />
+    <EmbeddedResource Include="EditorResource\layout_vertical@2x.png" />
+    <EmbeddedResource Include="EditorResource\layout_vertical1.png" />
+    <EmbeddedResource Include="EditorResource\layout_vertical1@2x.png" />
+    <EmbeddedResource Include="EditorResource\left.png" />
+    <EmbeddedResource Include="EditorResource\left@2x.png" />
+    <EmbeddedResource Include="EditorResource\left1.png" />
+    <EmbeddedResource Include="EditorResource\left1@2x.png" />
+    <EmbeddedResource Include="EditorResource\lock.png" />
+    <EmbeddedResource Include="EditorResource\NormalImage.png" />
+    <EmbeddedResource Include="EditorResource\relative.png" />
+    <EmbeddedResource Include="EditorResource\relative@2x.png" />
+    <EmbeddedResource Include="EditorResource\relative1.png" />
+    <EmbeddedResource Include="EditorResource\relative1@2x.png" />
+    <EmbeddedResource Include="EditorResource\right.png" />
+    <EmbeddedResource Include="EditorResource\right@2x.png" />
+    <EmbeddedResource Include="EditorResource\right1.png" />
+    <EmbeddedResource Include="EditorResource\right1@2x.png" />
+    <EmbeddedResource Include="EditorResource\unLock.png" />
+    <EmbeddedResource Include="EditorResource\up.png" />
+    <EmbeddedResource Include="EditorResource\up@2x.png" />
+    <EmbeddedResource Include="EditorResource\up1.png" />
+    <EmbeddedResource Include="EditorResource\up1@2x.png" />
+    <EmbeddedResource Include="EditorResource\verticalFilp.png" />
+    <EmbeddedResource Include="EditorResource\verticalFilp@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\all.png" />
+    <EmbeddedResource Include="ResourcePanelResource\all@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Audio.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Audio@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\bg.png" />
+    <EmbeddedResource Include="ResourcePanelResource\bg@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\ccs.png" />
+    <EmbeddedResource Include="ResourcePanelResource\ccs@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\cfg.png" />
+    <EmbeddedResource Include="ResourcePanelResource\cfg@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Close.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Close@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csb.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csb@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csd.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csd@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csi.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csi@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csl.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csz.png" />
+    <EmbeddedResource Include="ResourcePanelResource\csz@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\file.png" />
+    <EmbeddedResource Include="ResourcePanelResource\file@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\folder.png" />
+    <EmbeddedResource Include="ResourcePanelResource\folderOpen.png" />
+    <EmbeddedResource Include="ResourcePanelResource\graph.png" />
+    <EmbeddedResource Include="ResourcePanelResource\graph@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\image.png" />
+    <EmbeddedResource Include="ResourcePanelResource\image@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\import.png" />
+    <EmbeddedResource Include="ResourcePanelResource\import@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Other.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Other@2X.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Particle.png" />
+    <EmbeddedResource Include="ResourcePanelResource\Particle@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\plistFolder.png" />
+    <EmbeddedResource Include="ResourcePanelResource\plistFolder@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\refresh.png" />
+    <EmbeddedResource Include="ResourcePanelResource\refresh@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\search.png" />
+    <EmbeddedResource Include="ResourcePanelResource\search@2x.png" />
+    <EmbeddedResource Include="ResourcePanelResource\text.png" />
+    <EmbeddedResource Include="ResourcePanelResource\text@2x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

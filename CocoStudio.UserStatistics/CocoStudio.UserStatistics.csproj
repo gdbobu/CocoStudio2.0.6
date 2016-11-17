@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.UserStatistics.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88B39019-A8A9-4B3E-9B28-66657BDB20BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.UserStatistics</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.3.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="EQATEC.Analytics.Monitor">
+      <HintPath>..\External-Libs\EQATEC.Analytics.Monitor.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MeasurementProtocolClient">
+      <HintPath>..\External-Libs\MeasurementProtocolClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External-Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>..\External-Libs\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CocoStudio\UserStatistics\TraceMethodCallAttribute.cs" />
+    <Compile Include="CocoStudio\UserStatistics\TracePropertyCallAttribute.cs" />
+    <Compile Include="CocoStudio\UserStatistics\TracePropertyListCountAttribute.cs" />
+    <Compile Include="CocoStudio\UserStatistics\IUserStatistics.cs" />
+    <Compile Include="CocoStudio\UserStatistics\BaseUserStatistics.cs" />
+    <Compile Include="CocoStudio\UserStatistics\CocosStudioClient.cs" />
+    <Compile Include="CocoStudio\UserStatistics\EditorInfo.cs" />
+    <Compile Include="CocoStudio\UserStatistics\LocalInfo.cs" />
+    <Compile Include="CocoStudio\UserStatistics\StatisticsConstant.cs" />
+    <Compile Include="CocoStudio\UserStatistics\EventCache.cs" />
+    <Compile Include="CocoStudio\UserStatistics\FeatureInfo.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisticsMonitor.cs" />
+    <Compile Include="CocoStudio\UserStatistics\ViewRegions.cs" />
+    <Compile Include="CocoStudio\UserStatistics\TraceInitializeAttribute.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisticsFactory.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisticsTelerik.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisitcsCS.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisticsGoogleMonitor.cs" />
+    <Compile Include="CocoStudio\UserStatistics\UserStatisitcsGoogle.cs" />
+    <Compile Include="CocoStudio\UserStatistics\Aspect\TraceMethodExceptionAttribute.cs" />
+    <Compile Include="Hyperic\Sigar\Sigar.cs" />
+    <Compile Include="Hyperic\Sigar\SigarException.cs" />
+    <Compile Include="Hyperic\Sigar\SigarNotImplementedException.cs" />
+    <Compile Include="Hyperic\Sigar\Mem.cs" />
+    <Compile Include="Hyperic\Sigar\Who.cs" />
+    <Compile Include="Hyperic\Sigar\WhoList.cs" />
+    <Compile Include="Hyperic\Sigar\Swap.cs" />
+    <Compile Include="Hyperic\Sigar\SysInfo.cs" />
+    <Compile Include="Hyperic\Sigar\Cpu.cs" />
+    <Compile Include="Hyperic\Sigar\CpuInfo.cs" />
+    <Compile Include="Hyperic\Sigar\CpuInfoList.cs" />
+    <Compile Include="Hyperic\Sigar\FileSystem.cs" />
+    <Compile Include="Hyperic\Sigar\FileSystemList.cs" />
+    <Compile Include="Hyperic\Sigar\FileSystemUsage.cs" />
+    <Compile Include="Hyperic\Sigar\NetInterfaceList.cs" />
+    <Compile Include="Hyperic\Sigar\NetAddress.cs" />
+    <Compile Include="Hyperic\Sigar\NetInterfaceConfig.cs" />
+    <Compile Include="Hyperic\Sigar\NetInterfaceStat.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PostSharp\ImplementationDetails_28512dc1.EnhancedByPostSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.CocoaChina\Modules.Communal.CocoaChina.csproj">
+      <Project>{52abd596-facc-47f5-b353-9479f3c39984}</Project>
+      <Name>Modules.Communal.CocoaChina</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

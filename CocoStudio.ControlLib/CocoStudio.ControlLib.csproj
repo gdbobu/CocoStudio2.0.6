@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.ControlLib.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C736502A-92E3-4DA9-825E-4D992C33D6F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.ControlLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>2.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.ControlLib</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Cairo.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Modules.Communal.CocoaChina">
+      <HintPath>lib\Modules.Communal.CocoaChina.dll</HintPath>
+    </Reference>
+    <Reference Include="pango-sharp" />
+    <Reference Include="Modules.Communal.MultiLanguage">
+      <HintPath>lib\Modules.Communal.MultiLanguage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xwt">
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt.Gtk">
+      <HintPath>..\External-Libs\Xwt.Gtk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NewFileEventArgs.cs" />
+    <Compile Include="ImportFileDialog.cs" />
+    <Compile Include="DialogResult.cs" />
+    <Compile Include="EImportFileButtonResult.cs" />
+    <Compile Include="ProgressDialog.cs" />
+    <Compile Include="XmlAnalysis.cs" />
+    <Compile Include="ExportPlistInfoDialog.cs" />
+    <Compile Include="SearchEntry.cs" />
+    <Compile Include="StudioMenuItem.cs" />
+    <Compile Include="NewFileDialog.cs" />
+    <Compile Include="FileDialogResult.cs" />
+    <Compile Include="FileTypeInfo.cs" />
+    <Compile Include="EFileType.cs" />
+    <Compile Include="FileSuffix.cs" />
+    <Compile Include="FileTypeItem.cs" />
+    <Compile Include="Event\UserLoginEventArgs.cs" />
+    <Compile Include="Event\NewProjectEventArgs.cs" />
+    <Compile Include="Model\LoginEncrypt.cs" />
+    <Compile Include="Model\LoginInfo.cs" />
+    <Compile Include="Model\ProjectViewModel.cs" />
+    <Compile Include="Windows\LoginDialog.cs" />
+    <Compile Include="Windows\NewProjectDialog.cs" />
+    <Compile Include="Windows\HelpDialog.cs" />
+    <Compile Include="Windows\CoverPromptDialog.cs" />
+    <Compile Include="Windows\CoverEachFileDialog.cs" />
+    <Compile Include="Windows\CustomCanvasDialog.cs" />
+    <Compile Include="Stetic\Gui.cs" />
+    <Compile Include="Stetic\ActionGroups.cs" />
+    <Compile Include="Stetic\BinContainer.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resource\cocostudio_uieditor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gui.stetic" />
+    <EmbeddedResource Include="Resource\CocoStudio_Logo.png" />
+    <EmbeddedResource Include="Resource\GUI_selected01.png" />
+    <EmbeddedResource Include="Resource\layer.png" />
+    <EmbeddedResource Include="Resource\layer@2x.png" />
+    <EmbeddedResource Include="Resource\node.png" />
+    <EmbeddedResource Include="Resource\node@2x.png" />
+    <EmbeddedResource Include="Resource\plist.png" />
+    <EmbeddedResource Include="Resource\plist@2x.png" />
+    <EmbeddedResource Include="Resource\sence.png" />
+    <EmbeddedResource Include="Resource\sence@2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

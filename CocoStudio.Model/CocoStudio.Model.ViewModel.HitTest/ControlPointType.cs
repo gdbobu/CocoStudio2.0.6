@@ -1,0 +1,19 @@
+using System;
+
+namespace CocoStudio.Model.ViewModel.HitTest
+{
+	public enum ControlPointType
+	{
+		POINT_NONE = -1,
+		POINT_LEFT_TOP,
+		POINT_LEFT_BOTTOM,
+		POINT_RIGHT_BOTTOM,
+		POINT_RIGHT_TOP,
+		POINT_LEFT_MIDDLE,
+		POINT_MIDDLE_BOTTOM,
+		POINT_RIGHT_MIDDLE,
+		POINT_MIDDLE_TOP,
+		POINT_ANCHOR,
+		POINT_MAX
+	}
+}

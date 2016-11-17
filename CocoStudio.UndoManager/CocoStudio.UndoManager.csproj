@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.UndoManager.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{436AE71A-4CFC-429A-AD7D-551FC9BB90AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.UndoManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.1</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.UndoManager</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArgumentValidator.cs" />
+    <Compile Include="CompositeException.cs" />
+    <Compile Include="CompositeTask.cs" />
+    <Compile Include="IEditableDocument.cs" />
+    <Compile Include="UndoTask.cs" />
+    <Compile Include="CollectionUndoTask.cs" />
+    <Compile Include="ICompositeTaskService.cs" />
+    <Compile Include="CompositeTaskManager.cs" />
+    <Compile Include="CancelableEventArgs`1.cs" />
+    <Compile Include="FusePropertyChangeAttribute.cs" />
+    <Compile Include="INotifyStateChanged.cs" />
+    <Compile Include="ITaskService.cs" />
+    <Compile Include="IUndoManager.cs" />
+    <Compile Include="StateChangedEventArgs.cs" />
+    <Compile Include="TaskServiceLock.cs" />
+    <Compile Include="TaskServiceSingleton.cs" />
+    <Compile Include="UndoPropertyAttribute.cs" />
+    <Compile Include="PropertyUndoTask.cs" />
+    <Compile Include="Recorder\BaseRecorder.cs" />
+    <Compile Include="Recorder\DefaultRecorder.cs" />
+    <Compile Include="Recorder\EmptyRecorder.cs" />
+    <Compile Include="Recorder\IRecordableCallback.cs" />
+    <Compile Include="Recorder\RecorderCreatedEventArgs.cs" />
+    <Compile Include="Recorder\RecorderTaskEventArgs.cs" />
+    <Compile Include="TaskModel\ITask.cs" />
+    <Compile Include="TaskModel\IInternalTask.cs" />
+    <Compile Include="TaskModel\TaskBase`1.cs" />
+    <Compile Include="TaskModel\IUndoableTask.cs" />
+    <Compile Include="TaskModel\UndoableTaskBase`1.cs" />
+    <Compile Include="TaskModel\TaskEventArgs`1.cs" />
+    <Compile Include="TaskModel\UndoableTaskEventArgs`1.cs" />
+    <Compile Include="TaskModel\CompositeTask.cs" />
+    <Compile Include="TaskModel\IInternalTaskService.cs" />
+    <Compile Include="TaskModel\Task`1.cs" />
+    <Compile Include="TaskModel\TaskMode.cs" />
+    <Compile Include="TaskModel\TaskResult.cs" />
+    <Compile Include="TaskModel\TaskService.cs" />
+    <Compile Include="TaskModel\TaskServiceEventArgs.cs" />
+    <Compile Include="TaskModel\CancellableTaskServiceEventArgs.cs" />
+    <Compile Include="TaskModel\CompositeUndoableTask.cs" />
+    <Compile Include="TaskModel\UndoableTask`1.cs" />
+    <Compile Include="TaskModel\UndoableTask\SequentiallyCompositeUndoableTask`1.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

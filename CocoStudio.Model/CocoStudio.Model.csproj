@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{476B3205-3362-4B6B-94ED-B8E7EFD4A506}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins">
+      <HintPath>..\External-Libs\Mono.Addins.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Cairo.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\External-Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PostSharp">
+      <HintPath>..\External-Libs\PostSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Mono.Cairo" />
+    <Reference Include="Xwt">
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt.Gtk">
+      <HintPath>..\External-Libs\Xwt.Gtk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CocoStudio.Model.Command\CommandHandles.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ActionTagManager.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\BaseObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\BoolFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ButtonObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\CheckBoxObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ColorData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ColorFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\DataTypeCache.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\FilePathData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\FrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameMapObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameProjectBinding.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameProjectContent.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameProjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameProjectLoader.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\GameProjectLoadResult.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\IDataConvert.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\IDataInitialize.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ImageViewObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\IntFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\LayerObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ListViewObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\LoadingBarObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\NodeObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\NodeType.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\PageViewObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\PanelObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ParticleObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\PointFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\PrimitiveObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ProjectContent.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ProjectNodeObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\PropertyAccessorHandler.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\ScrollViewObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\SimpleAudioObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\SingleNodeObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\SliderObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\SpriteObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\StringFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TextAtlasObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TextBMFontObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TextFieldObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TextObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TextureFrameData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TimelineActionData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\TimelineData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\VisualObjectData.cs" />
+    <Compile Include="CocoStudio.Model.DataModel\WidgetObjectData.cs" />
+    <Compile Include="CocoStudio.Model.Editor\AnchorPointEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\AstrictLengthEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CallBackPropertyEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CallBackPropertyRootEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ChangeColorEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CheckBoxEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CheckBoxValue.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ColorsEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ComboxEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CustomPropertyModel.cs" />
+    <Compile Include="CocoStudio.Model.Editor\CustomPropertyModelEqual.cs" />
+    <Compile Include="CocoStudio.Model.Editor\EntryComBoxEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\EntryTextViewEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\FilpEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\FilpValue.cs" />
+    <Compile Include="CocoStudio.Model.Editor\FixZoom.cs" />
+    <Compile Include="CocoStudio.Model.Editor\FixZoomEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\FixZoomPosition.cs" />
+    <Compile Include="CocoStudio.Model.Editor\IListSelectEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ImageEventBox.cs" />
+    <Compile Include="CocoStudio.Model.Editor\NameEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\OpacityEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PaddinEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PasswordEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PlayControlEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PlayControlWidget.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PListEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PListLabelEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PositionEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\PropertyColorEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceFileEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceFileImport.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceFilterAttributeExtend.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceGroupEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceGroupValue.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ResourceImageEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\RotationEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ScaleEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\ScaleNumberEditorWidget.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SizeEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SizePrecentEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SizeValue.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SkewEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SliderEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\SudukuEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\UIControlSizeEditor.cs" />
+    <Compile Include="CocoStudio.Model.Editor\UIListViewEditor.cs" />
+    <Compile Include="CocoStudio.Model.Event\AlignVisualObjectsEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\CanvasSizeChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\CanvasSizeChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\CanvasZoomChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\CanvasZoomChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\ChangeDownloadServerEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\ChangeDownloadServerEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\CopyVisualObjectsEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\CreateSerialFrameEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\CreateSerialFrameEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\CutVisualObjectsEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\DeleteVisualObjectsEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\EnumLayoutChangeSource.cs" />
+    <Compile Include="CocoStudio.Model.Event\GuidesLockChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\GuidesLockChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\LayoutChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\LayoutChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\NormalCloseCheckCompleteEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\NormalCloseCheckCompleteEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\OutputInfoEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\OutputInfoEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\PackageResourcesEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\PackageResourcesEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\PasteObjectsChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\PasteVisualObjectsEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\PropertyViewRefreshArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\PropertyViewRefreshEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RefreshPackageEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RefreshPackageEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\RenderEngineInitCompletedEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RenderEngineInitCompletedEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\RePackageResourcesEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RePackageResourcesEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\RotateControlEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RulerChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RulerVisibleChangeArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\RunDownloadServerEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\RunDownloadServerEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\SelectedObjectsChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\SelectedObjectsChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\SelectedVisualObjectsChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\SelectedVisualObjectsChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\ShareHttpIPEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\ShareHttpIPEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.Event\StatusChangedRequestEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\TitleChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\TitleChangeEventAgrs.cs" />
+    <Compile Include="CocoStudio.Model.Event\ToolBarExpandChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\Win32ChangeEvent.cs" />
+    <Compile Include="CocoStudio.Model.Event\Win32ChangeEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.ExtensionModel\FlatbufSerializer.cs" />
+    <Compile Include="CocoStudio.Model.ExtensionModel\JsonSerializer.cs" />
+    <Compile Include="CocoStudio.Model.ExtensionModel\ProtobufSerializer.cs" />
+    <Compile Include="CocoStudio.Model.Interface\ICallBackEvent.cs" />
+    <Compile Include="CocoStudio.Model.Interface\IInputDispatch.cs" />
+    <Compile Include="CocoStudio.Model.Interface\InputDispatchHandler.cs" />
+    <Compile Include="CocoStudio.Model.Interface\IRenderUC.cs" />
+    <Compile Include="CocoStudio.Model.Interface\ITimeline.cs" />
+    <Compile Include="CocoStudio.Model.Plugins\DllAPIWrap.cs" />
+    <Compile Include="CocoStudio.Model.Plugins\PluginEngine.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Component\ComControlNode.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Component\MoveDirection.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Component\SelectInfo.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.HitTest\BaseTestResult.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.HitTest\ControlPointType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.HitTest\HitTestResult.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.HitTest\OperationType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.HitTest\RectTestResult.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Input\BaseInputDispatch.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Input\MouseWheelEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Input\SceneInputDispatch.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel.Input\UIInputDispatch.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ActionModel.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\AnchorPointFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\AnimationPauseHandler.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\AnimationPlayHandler.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\AstrictLengthValue.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BaseInfo.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BaseObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BlendDst.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BlendSrc.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BlendType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\BoolFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ButtonObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\CanvasObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\CheckBoxObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ChildItem.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ColorFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ColorValue.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ConditionMode.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\CurrentFrameIndexChangedHandler.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\DataItem.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EasingData.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EasingParmaAttribute.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EBlendDst.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EBlendSrc.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EIdentify.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EnumTypeAttribute.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EventFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\EventModel.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\Frame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\FrameIndexChangedEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\GameMapObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\GameWindow.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\GUIType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\HandlerFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\IAnimate.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\IColorValue.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\IDisplayState.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ImageViewObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\IntFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\IResourceObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\LayerObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\LayoutRefrencePoint.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ListViewObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\LoadingBarDirectionType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\LoadingBarObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ModelObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\MouseEventArgsExtend.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\NodeCollection.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\NodeObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\NotificationObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ObjectCollection.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\OperationMask.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PageViewObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PanelObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ParticleObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PasswordValue.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PointFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PositionFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PrimitiveObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ProjectNest.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ProjectNodeObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\PropertySupport.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\RenderFrameIndexChangedEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\RotationSkewFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ScaleFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\SceneObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ScrollViewDirectionType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ScrollViewObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\SimpleAudioObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\SingleNodeObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\SliderObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\SpriteObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\StringFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextAtlasObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextBMFontObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextFieldObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextHorizontalType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextureFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TextVerticalType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\Timeline.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TimelineAction.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TimelineActionManager.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TimelineDurationChangedEventArgs.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TimelineUndoManager.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TriggerModel.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\TweenType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\UISizeType.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ViewOrder.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\VisibleFrame.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\VisualObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\VisualObjectHelper.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\WidgetObject.cs" />
+    <Compile Include="CocoStudio.Model.ViewModel\ZOrderFrame.cs" />
+    <Compile Include="CocoStudio.Model.Visiter\GameProjectVisiter.cs" />
+    <Compile Include="CocoStudio.Model.Window\WindowHelp.cs" />
+    <Compile Include="CocoStudio.Model\CanvasSizes.cs" />
+    <Compile Include="CocoStudio.Model\IModel.cs" />
+    <Compile Include="CocoStudio.Model\LabelTooltipEditor.cs" />
+    <Compile Include="CocoStudio.Model\ModelDragData.cs" />
+    <Compile Include="CocoStudio.Model\ModelExtensionAttribute.cs" />
+    <Compile Include="CocoStudio.Model\ModelExtensionNode.cs" />
+    <Compile Include="CocoStudio.Model\ModelManager.cs" />
+    <Compile Include="CocoStudio.Model\ModelMetaData.cs" />
+    <Compile Include="CocoStudio.Model\ResourceItemData.cs" />
+    <Compile Include="CocoStudio.Model\SceneTransformHelp.cs" />
+    <Compile Include="CocoStudio\Helper.cs" />
+    <Compile Include="EasingDataHelper.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_1.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_2.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_3.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_4.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_5.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_6.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__a_7.cs" />
+    <Compile Include="PostSharp.ImplementationDetails_c065fe4d\--z__MetadataDispenser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PostSharp.ImplementationDetails_c065fe4d\Aspects1" />
+    <EmbeddedResource Include="PostSharp.ImplementationDetails_c065fe4d\EnhancedByPostSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Core\CocoStudio.Core.csproj">
+      <Project>{4991eece-0cd7-4b07-ba0e-d68c8606bfc4}</Project>
+      <Name>CocoStudio.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.EngineAdapterWrap\CocoStudio.EngineAdapterWrap.csproj">
+      <Project>{faa231aa-7e4e-425d-b17d-62e4f08342f0}</Project>
+      <Name>CocoStudio.EngineAdapterWrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Lib.Prism\CocoStudio.Lib.Prism.csproj">
+      <Project>{7a0b8c39-69cf-4dea-b9c5-3b43052f5d5a}</Project>
+      <Name>CocoStudio.Lib.Prism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Model.Basic\CocoStudio.Model.Basic.csproj">
+      <Project>{a12dd75c-1298-4df4-acca-e50017bbab71}</Project>
+      <Name>CocoStudio.Model.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Projects\CocoStudio.Projects.csproj">
+      <Project>{1c6ad019-0af3-4bb9-bcb4-43581bb25d91}</Project>
+      <Name>CocoStudio.Projects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.ToolKit\CocoStudio.ToolKit.csproj">
+      <Project>{24fe552b-2a89-470a-851b-e3341787b79a}</Project>
+      <Name>CocoStudio.ToolKit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.UndoManager\CocoStudio.UndoManager.csproj">
+      <Project>{436ae71a-4cfc-429a-ad7d-551fc9bb90ae}</Project>
+      <Name>CocoStudio.UndoManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.UserStatistics\CocoStudio.UserStatistics.csproj">
+      <Project>{88b39019-a8a9-4b3e-9b28-66657bdb20bd}</Project>
+      <Name>CocoStudio.UserStatistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.MultiLanguage\Modules.Communal.MultiLanguage.csproj">
+      <Project>{3c6e6bce-89f3-428c-a404-3d6a2c828406}</Project>
+      <Name>Modules.Communal.MultiLanguage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

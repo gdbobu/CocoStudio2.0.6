@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\Modules.Communal.Packer.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABCD1F39-4ADD-463D-AF6F-26BF293F657F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Modules.Communal.Packer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp" />
+    <Reference Include="gdk-sharp" />
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="glib-sharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Stetic\Gui.cs" />
+    <Compile Include="Stetic\ActionGroups.cs" />
+    <Compile Include="Modules\Communal\Packer\ImageFileFormat.cs" />
+    <Compile Include="Modules\Communal\Packer\SortFormat.cs" />
+    <Compile Include="Modules\Communal\Packer\PackToolViewModel.cs" />
+    <Compile Include="Modules\Communal\Packer\ImageInfo.cs" />
+    <Compile Include="Modules\Communal\Packer\PackerHelper.cs" />
+    <Compile Include="Modules\Communal\Packer\PackerSprite.cs" />
+    <Compile Include="Modules\Communal\Packer\PListImageReader.cs" />
+    <Compile Include="Modules\Communal\Packer\PackToolDialog.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistParticleReader.cs" />
+    <Compile Include="Modules\Communal\Packer\Model\CustomRectangle.cs" />
+    <Compile Include="Modules\Communal\Packer\Model\MaxRectsBinPack.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistImageFormat.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistFormatCocos2d.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistFormatCocos2d_0994.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistFormatCocos2d_Original.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistImageFormatFactory.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistFormatHelp.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\PlistFormatZwoptex.cs" />
+    <Compile Include="Modules\Communal\Packer\PlistReader\Formates\PlistFormats.cs" />
+    <Compile Include="Modules\Communal\Packer\Properties\Settings.cs" />
+    <Compile Include="Nuclex\Game\Packing\RectanglePacker.cs" />
+    <Compile Include="Nuclex\Game\Packing\ArevaloRectanglePacker.cs" />
+    <Compile Include="Nuclex\Game\Packing\CygonRectanglePacker.cs" />
+    <Compile Include="Nuclex\Game\Packing\OutOfSpaceException.cs" />
+    <Compile Include="Nuclex\Game\Packing\SimpleRectanglePacker.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PostSharp\ImplementationDetails_cfda754a.EnhancedByPostSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.ControlLib\CocoStudio.ControlLib.csproj">
+      <Project>{c736502a-92e3-4da9-825e-4d992c33d6f8}</Project>
+      <Name>CocoStudio.ControlLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.MultiLanguage\Modules.Communal.MultiLanguage.csproj">
+      <Project>{3c6e6bce-89f3-428c-a404-3d6a2c828406}</Project>
+      <Name>Modules.Communal.MultiLanguage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.PList\Modules.Communal.PList.csproj">
+      <Project>{0be7b35e-486d-4dab-b42b-bcaefec62c92}</Project>
+      <Name>Modules.Communal.PList</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

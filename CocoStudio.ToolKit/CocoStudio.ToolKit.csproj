@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.ToolKit.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24FE552B-2A89-470A-851B-E3341787B79A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.ToolKit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.ToolKit</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core">
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide">
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Xwt">
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComBoxEx.cs" />
+    <Compile Include="DragData.cs" />
+    <Compile Include="TextEditorWindow.cs" />
+    <Compile Include="BaseEditor.cs" />
+    <Compile Include="ITypeEditor.cs" />
+    <Compile Include="BoolEditor.cs" />
+    <Compile Include="CompactScrolledWindow.cs" />
+    <Compile Include="ComponentGrid.cs" />
+    <Compile Include="ContentLabel.cs" />
+    <Compile Include="DefaultEditor.cs" />
+    <Compile Include="DefaultEditorGtk.cs" />
+    <Compile Include="EditorManager.cs" />
+    <Compile Include="IWidgetValueChanged.cs" />
+    <Compile Include="IEditorWidget.cs" />
+    <Compile Include="BaseEditorWidget.cs" />
+    <Compile Include="AstrictLengthEditorWidget.cs" />
+    <Compile Include="ChangeColorWidget.cs" />
+    <Compile Include="ColorEvent.cs" />
+    <Compile Include="ComBoxEvnent.cs" />
+    <Compile Include="PointColorEvent.cs" />
+    <Compile Include="EntryComBoxEditorWidget.cs" />
+    <Compile Include="EntryComboxEvent.cs" />
+    <Compile Include="EntryNumWidget.cs" />
+    <Compile Include="ImageCombox.cs" />
+    <Compile Include="FilpEditorWidget.cs" />
+    <Compile Include="BtnEvent.cs" />
+    <Compile Include="ImageEx.cs" />
+    <Compile Include="PasswordEditorWidget.cs" />
+    <Compile Include="BoolEvent.cs" />
+    <Compile Include="NumberEditorWidget.cs" />
+    <Compile Include="PointEditorWidget.cs" />
+    <Compile Include="PointEvent.cs" />
+    <Compile Include="NumberButtonImage.cs" />
+    <Compile Include="ScaleEditorWidget.cs" />
+    <Compile Include="SliderEditorWidget.cs" />
+    <Compile Include="SliderEditorEx.cs" />
+    <Compile Include="UIControlSizeEditorWidget.cs" />
+    <Compile Include="UIControlEvent.cs" />
+    <Compile Include="UIListViewEditorWidget.cs" />
+    <Compile Include="ListViewEvent.cs" />
+    <Compile Include="EnumEditor.cs" />
+    <Compile Include="EnumEditorGtk.cs" />
+    <Compile Include="GeneralGrid.cs" />
+    <Compile Include="TabEventArgs.cs" />
+    <Compile Include="TabLabel.cs" />
+    <Compile Include="GeneralTitle.cs" />
+    <Compile Include="IntEditor.cs" />
+    <Compile Include="FloatEditor.cs" />
+    <Compile Include="NumberEntryEditor.cs" />
+    <Compile Include="PropertyEditorTypeAttribute.cs" />
+    <Compile Include="PropertyGrid.cs" />
+    <Compile Include="PropertyGridExpand.cs" />
+    <Compile Include="PropertyGridUtilities.cs" />
+    <Compile Include="PropertyItem.cs" />
+    <Compile Include="PropertyItemCollection.cs" />
+    <Compile Include="PropertyOrderAttribute.cs" />
+    <Compile Include="CatagoryAttribute.cs" />
+    <Compile Include="UndoEntryIntEx.cs" />
+    <Compile Include="ValueRangeAttribute.cs" />
+    <Compile Include="Stetic\Gui.cs" />
+    <Compile Include="Stetic\ActionGroups.cs" />
+    <Compile Include="Jisons\EventButtonHelper.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk_gui\gui.stetic" />
+    <EmbeddedResource Include="Icon\disclose-arrow-down-16.png" />
+    <EmbeddedResource Include="Icon\disclose-arrow-up-16.png" />
+    <EmbeddedResource Include="Icon\status-waiting-1-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Core\CocoStudio.Core.csproj">
+      <Project>{4991eece-0cd7-4b07-ba0e-d68c8606bfc4}</Project>
+      <Name>CocoStudio.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Lib.Prism\CocoStudio.Lib.Prism.csproj">
+      <Project>{7a0b8c39-69cf-4dea-b9c5-3b43052f5d5a}</Project>
+      <Name>CocoStudio.Lib.Prism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Model.Basic\CocoStudio.Model.Basic.csproj">
+      <Project>{a12dd75c-1298-4df4-acca-e50017bbab71}</Project>
+      <Name>CocoStudio.Model.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.UndoManager\CocoStudio.UndoManager.csproj">
+      <Project>{436ae71a-4cfc-429a-ad7d-551fc9bb90ae}</Project>
+      <Name>CocoStudio.UndoManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.MultiLanguage\Modules.Communal.MultiLanguage.csproj">
+      <Project>{3c6e6bce-89f3-428c-a404-3d6a2c828406}</Project>
+      <Name>Modules.Communal.MultiLanguage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

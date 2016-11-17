@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Cocos\Cocos Studio 2\CocoStudio.Core.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4991EECE-0CD7-4B07-BA0E-D68C8606BFC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>CocoStudio.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>CocoStudio.Core</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Addins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Addins.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cairo, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Cairo.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Core, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoDevelop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoDevelop.Ide, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\MonoDevelop.Ide.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Xwt, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Xwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Xwt.Gtk, Version=0.1.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\External-Libs\Xwt.Gtk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileLockHandler.cs" />
+    <Compile Include="UnixFileLockHandler.cs" />
+    <Compile Include="WinFileLockHandler.cs" />
+    <Compile Include="ImportResourceResult.cs" />
+    <Compile Include="IService.cs" />
+    <Compile Include="FileOptionHelp.cs" />
+    <Compile Include="ProjectItemModel.cs" />
+    <Compile Include="RecentFilesService.cs" />
+    <Compile Include="RecentProjectChangeEventArgs.cs" />
+    <Compile Include="EnumRecentPrjChangeType.cs" />
+    <Compile Include="SolutionLockHandler.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="IViewContentExtend.cs" />
+    <Compile Include="ProgressMonitorManager.cs" />
+    <Compile Include="ProjectsOperations.cs" />
+    <Compile Include="RootWorkspace.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="DocumentWindow.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="DefaultPadContent.cs" />
+    <Compile Include="Starter.cs" />
+    <Compile Include="ViewContent.cs" />
+    <Compile Include="PlatformAdapter.cs" />
+    <Compile Include="ExtensionModel\CmdEntryCodon.cs" />
+    <Compile Include="ExtensionModel\CmdEntrySetCodon.cs" />
+    <Compile Include="ExtensionModel\MenuArrayInfo.cs" />
+    <Compile Include="ExtensionModel\MenuHandler.cs" />
+    <Compile Include="ExtensionModel\CcsCmdHandler.cs" />
+    <Compile Include="ExtensionModel\MenuInfo.cs" />
+    <Compile Include="ExtensionModel\ICommandHandle.cs" />
+    <Compile Include="ExtensionModel\IMainTool.cs" />
+    <Compile Include="ExtensionModel\ExtensionPath.cs" />
+    <Compile Include="ExtensionModel\IMainRender.cs" />
+    <Compile Include="ExtensionModel\IMainWindowPart.cs" />
+    <Compile Include="Codons\DisplayBuilderCodon.cs" />
+    <Compile Include="Commands\CmdEnum.cs" />
+    <Compile Include="Commands\CommandCreater.cs" />
+    <Compile Include="Commands\CommandRunArgs.cs" />
+    <Compile Include="Commands\CommandUpdateArgs.cs" />
+    <Compile Include="Commands\CommandArrayUpdateArgs.cs" />
+    <Compile Include="Commands\CommandProxy.cs" />
+    <Compile Include="Commands\CommandArrayProxy.cs" />
+    <Compile Include="Commands\FileTabCommand.cs" />
+    <Compile Include="Commands\GlobalCommand.cs" />
+    <Compile Include="Commands\GlobalCommandHandle.cs" />
+    <Compile Include="Commands\MenuCreator.cs" />
+    <Compile Include="Events\AddResourcesArgs.cs" />
+    <Compile Include="Events\AddResourcesEvent.cs" />
+    <Compile Include="Events\AlignedObjectsArgs.cs" />
+    <Compile Include="Events\AlignedObjectsEvent.cs" />
+    <Compile Include="Events\ScaleLockedChangeEvent.cs" />
+    <Compile Include="Events\SelectedResourceItemsChangedArgs.cs" />
+    <Compile Include="Events\SelectedResourceItemsChangedEvent.cs" />
+    <Compile Include="Events\ProjectCreatedEventArgs.cs" />
+    <Compile Include="Events\WorkspaceItemEventArgs.cs" />
+    <Compile Include="Events\SolutionEventArgs.cs" />
+    <Compile Include="Events\WorkspaceItemChangeEventArgs.cs" />
+    <Compile Include="ProgressMonitors\ConsoleProgressFullExceptionMonitor.cs" />
+    <Compile Include="ProgressMonitors\MessageDialogProgressMonitor.cs" />
+    <Compile Include="Service\Runtime.cs" />
+    <Compile Include="View\DisplayBuilderService.cs" />
+    <Compile Include="View\IDisplayBuilder.cs" />
+    <Compile Include="View\IViewDisplayBuilder.cs" />
+    <Compile Include="View\DefaultViewDisplayBuilder.cs" />
+    <Compile Include="View\DocumentEventArgs.cs" />
+    <Compile Include="View\FileOpenInfo.cs" />
+    <Compile Include="View\IMainWindow.cs" />
+    <Compile Include="View\IDocumentWindow.cs" />
+    <Compile Include="View\DocumentWindowEventArgs.cs" />
+    <Compile Include="View\IViewService.cs" />
+    <Compile Include="View\Pad.cs" />
+    <Compile Include="View\PadCollection.cs" />
+    <Compile Include="View\MainWindowPartFactory.cs" />
+    <Compile Include="View\ViewService.cs" />
+    <Compile Include="View\WidgetPad.cs" />
+    <Compile Include="View\Workbench.cs" />
+    <Compile Include="View\LoadFileWrapper.cs" />
+    <Compile Include="ModulesInterface\IAutoSaveManager.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExtensionModel\MenuExtensionModel\addin.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CocoStudio.Basic\CocoStudio.Basic.csproj">
+      <Project>{9b5eb709-914e-4151-a73d-f7eca54c0d64}</Project>
+      <Name>CocoStudio.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.ControlLib\CocoStudio.ControlLib.csproj">
+      <Project>{c736502a-92e3-4da9-825e-4d992c33d6f8}</Project>
+      <Name>CocoStudio.ControlLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.EngineAdapterWrap\CocoStudio.EngineAdapterWrap.csproj">
+      <Project>{faa231aa-7e4e-425d-b17d-62e4f08342f0}</Project>
+      <Name>CocoStudio.EngineAdapterWrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Gtk.Extend\CocoStudio.Gtk.Extend.csproj">
+      <Project>{bee1a330-6030-41b8-8fe3-60ed9e918bee}</Project>
+      <Name>CocoStudio.Gtk.Extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Lib.Prism\CocoStudio.Lib.Prism.csproj">
+      <Project>{7a0b8c39-69cf-4dea-b9c5-3b43052f5d5a}</Project>
+      <Name>CocoStudio.Lib.Prism</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Model.Basic\CocoStudio.Model.Basic.csproj">
+      <Project>{a12dd75c-1298-4df4-acca-e50017bbab71}</Project>
+      <Name>CocoStudio.Model.Basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.Projects\CocoStudio.Projects.csproj">
+      <Project>{1c6ad019-0af3-4bb9-bcb4-43581bb25d91}</Project>
+      <Name>CocoStudio.Projects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.UndoManager\CocoStudio.UndoManager.csproj">
+      <Project>{436ae71a-4cfc-429a-ad7d-551fc9bb90ae}</Project>
+      <Name>CocoStudio.UndoManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CocoStudio.UserStatistics\CocoStudio.UserStatistics.csproj">
+      <Project>{88b39019-a8a9-4b3e-9b28-66657bdb20bd}</Project>
+      <Name>CocoStudio.UserStatistics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules.Communal.MultiLanguage\Modules.Communal.MultiLanguage.csproj">
+      <Project>{3c6e6bce-89f3-428c-a404-3d6a2c828406}</Project>
+      <Name>Modules.Communal.MultiLanguage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
